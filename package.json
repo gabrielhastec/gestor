@@ -1,0 +1,22 @@
+{
+  "name": "gestor",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "engines": {
+    "node": "20.19.4",
+    "pnpm": "10.28.2"
+  },
+  "scripts": {
+    "typecheck": "pnpm --filter @gestor/core typecheck && pnpm --filter @gestor/design-tokens typecheck && pnpm --filter @gestor/mobile typecheck",
+    "lint": "eslint apps/mobile packages/core packages/design-tokens --max-warnings 0",
+    "test": "pnpm --filter @gestor/core test && pnpm --filter @gestor/mobile test",
+    "test:coverage": "pnpm --filter @gestor/core test:coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "eslint": "^9.39.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.0"
+  }
+}
