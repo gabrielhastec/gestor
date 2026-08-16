@@ -1,0 +1,1 @@
+export const bootstrapTitle = 'Gestor';

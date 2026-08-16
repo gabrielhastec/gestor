@@ -2,3 +2,8 @@
 /docs/
 /skills/
 /.codex/
+
+# Artefatos transitórios do workspace.
+node_modules/
+coverage/
+.expo/
